@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
        body{
         background: black;
     color: white;
         
+       }
+       .center{
+    width: 20%;
+
        }
         .container{
             display: flex;
@@ -79,16 +86,38 @@ transition: background 0.5s;
     background: #0c60dd;
 }
 @media screen and (min-width: 481px) and (max-width:768px){
-    .center{
-        width: 100%;
-    }
-    .b2{
-        margin: 20px auto;
-    }
-    h1{
-        top: 20%;
-    }
+   
 }
+
+@media only screen and (max-width: 480px) and (min-width:281px ){
+   .container{
+    width: 100%;
+    
+   }
+    .center{
+        padding: 20px;
+    width: 60%;
+   }
+   
+   h1{
+   padding: 30px;
+    font-size: 20px;
+   }
+   .b1{
+    padding: 20px;
+    margin-top: -10px;
+    margin-left: -130px;
+
+   }
+   .b2{
+    padding: 20px;
+    margin-top: -10px;
+    
+   }
+
+}
+
+ 
         
 
     </style>
@@ -125,7 +154,7 @@ transition: background 0.5s;
         <h1 >
             Can We Hangout Sometime Soon?
         </h1>
-        <img src="https://media.tenor.com/rsXFEOqZwMMAAAAd/cute-baby-cute-baby-playing.gif" class="center" height="300">
+        <img src="https://media.tenor.com/rsXFEOqZwMMAAAAd/cute-baby-cute-baby-playing.gif" class="center" >
         <button id="move" class="b1" onclick="f2()">Yessss My Boy</button> 
         <button class="b2" onclick="f1()">Nooooooo</button>
     </div>
